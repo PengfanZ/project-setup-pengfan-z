@@ -237,7 +237,7 @@ const CourseInfo = (props) => {
                 </Col>
               )}
 
-              <Col xs='12'>
+              <Col xs='12' style={{ color: "red" }}>
                 Status:{" "}
                 {section.status === "WaitList"
                   ? `Waitlist: ${section.waitlistTotal}`

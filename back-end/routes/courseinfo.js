@@ -1,5 +1,6 @@
 const { Router } = require('express');
 const axios = require('axios');
+const { year, semester } = require('../date');
 
 const courseinfoRouter = Router();
 
@@ -15,7 +16,7 @@ courseinfoRouter.get('/:courseId', (req, res) => {
     const { courseId } = req.params;
     const { schoolId, subjectId, deptId } = getIds(courseId);
     axios
-        .get(`https://schedge.a1liu.com/current/current/${schoolId}/${subjectId}?full=true`)
+        .get(`https://schedge.a1liu.com/${year}/${semester}/${schoolId}/${subjectId}?full=true`)
         .then((response) => {
             const courseinfo = response.data.find((course) => course.deptCourseId === deptId);
             if (!courseinfo) {
@@ -23,10 +24,10 @@ courseinfoRouter.get('/:courseId', (req, res) => {
             }
             return res.json(courseinfo);
         })
-        .catch((err) => {
-            console.error(err);
-            return res.status(err.response.status).json(err.response.data);
-        });
+        .catch((err) =>
+            // console.error(err);
+            res.status(err.response.status).json(err.response.data)
+        );
 });
 
 // courseinfoRouter.use((error, req, res) => {
