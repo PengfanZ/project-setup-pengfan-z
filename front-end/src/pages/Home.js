@@ -56,6 +56,10 @@ function Home() {
         {" "}
         Tisch School of the Arts
       </Link>
+      <Link id='LIB' className='college' to='/school/UF'>
+        {" "}
+        Liberal Studies
+      </Link>
     </div>
   );
 }

@@ -7,23 +7,13 @@ const Contact = (props) => {
     <div class='row mt-2'>
       <Container fluid className='form justify-content-top'>
         <Row>
-          <Col>
+          <Col xs='12'>
             <h4 className='text'>Feel free to tell us what you think!</h4>
           </Col>
-        </Row>
-
-        <Row>
-          <Col className='d-flex justify-content-center align-items-center'>
-            <input type='text' className='input'></input>
+          <Col xs='12'>
+            <p className='text'>Email: pz723@nyu.edu</p>
           </Col>
         </Row>
-
-        <Row>
-          <Col className='d-flex justify-content-center align-items-center'>
-            <Button variant='primary'>Submit</Button>
-          </Col>
-        </Row>
-        {/* </form> */}
       </Container>
     </div>
   );
