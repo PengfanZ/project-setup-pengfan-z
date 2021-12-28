@@ -4,7 +4,7 @@
 
 ### Link For Smart Choice APP
 
-[nyu-smart-choice.com](nyu-smart-choice.com)
+[nyu-smart-choice.com](http://nyu-smart-choice.com)
 
 ### What?
 
