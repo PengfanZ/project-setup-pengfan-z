@@ -4,23 +4,23 @@
 
 ### Link For Smart Choice APP
 
-[Smart Choice](http://137.184.206.98:3000)
+[nyu-smart-choice.com](nyu-smart-choice.com)
 
 ### What?
 
 This is a web app that can help NYU students learning about the courses in an easy and powerful way.
 
-It will provide the original functionality of the NYU Albert Course Search with a simplier and beautiful user interface.
+It will provide the original functionality of the NYU Albert Course Search with a simplier and tidier user interface.
 
-Under each section of the course, the app will also provide extra information such as the rating of the course, comments, syllabus, etc. (all from users of this website) that NYU Albert cannot provide.
+Under each section of the course, the app will also provide extra information such as the rating of the course, comments, etc. (all from users of this website) that NYU Albert cannot provide.
 
 The courses can be selected and saved to a personalized account for future reviewing.
 
 ### How?
 
-The course search function is open to the public. The website will support course search by typing course name or by selecting major.
+The course search function is open to the public. The website will support course search by selecting school, major, and courses.
 
-The user can create an account to save their course choices so that it is faster for him/her to check those courses status and info. later. After logging in, the user can also share some useful information of the courses they took before by rating, commenting, uploading syllabus.
+The user can create an account to save their course choices so that it is faster for him/her to check those courses status and info. later. After logging in, the user can also share some useful information of the courses they took before by rating and commenting.
 
 ### Team Members:
 
