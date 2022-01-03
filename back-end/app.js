@@ -17,13 +17,14 @@ app.use(morgan('dev')); // morgan has a few logging default styles - dev is a ni
 // use express's builtin body-parser middleware to parse any data included in a request
 app.use(express.json()); // decode JSON-formatted incoming POST data
 app.use(express.urlencoded({ extended: true })); // decode url-encoded incoming POST data
+app.use("/", express.static("client")); // for deployment
 
 // make 'public' directory publicly readable with static content
 // app.use("/static", express.static("public"))
-
+/*
 app.get('/', (req, res) => {
     res.json('Hello World.');
-});
+});*/
 
 app.use('/majors', majorsRouter);
 
