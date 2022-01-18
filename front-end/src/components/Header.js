@@ -33,38 +33,43 @@ const Header = (props) => {
                   Home
                 </Link>
                 <Link className='burgerLink' to='/school/UA'>
-                  CAS
-                </Link>
-
-                <Link className='burgerLink' to='/school/UD'>
-                  Dentistry
+                  College of Arts and Sciences
                 </Link>
                 <Link className='burgerLink' to='/school/UG'>
-                  Gallatin
+                  Gallatin School of Individualized Study
                 </Link>
                 <Link className='burgerLink' to='/school/UB'>
-                  Stern
+                  Leonard N. Stern School of Business
                 </Link>
-                <Link className='burgerLink' to='/school/GP'>
+                {/* <Link className='burgerLink' to='/school/GP'>
                   Wagner
+                </Link> */}
+                <Link className='burgerLink' to='/school/UE'>
+                  Steinhardt School of Culture, Education, and Human Development
                 </Link>
+                <Link className='burgerLink' to='/school/UY'>
+                  Tandon School of Engineering
+                </Link>
+                <Link className='burgerLink' to='/school/GA'>
+                  Graduate School of Arts and Sciences
+                </Link>
+                <Link className='burgerLink' to='/school/GY'>
+                  Tandon School of Engineering (Graduate)
+                </Link>
+                <Link className='burgerLink' to='/school/UT'>
+                  Tisch School of the Arts
+                </Link>{" "}
+                <Link className='burgerLink' to='/school/UD'>
+                  Dentistry
+                </Link>{" "}
                 <Link className='burgerLink' to='/school/UN'>
                   Nursing
-                </Link>
+                </Link>{" "}
                 <Link className='burgerLink' to='/school/UU'>
                   Global Public Health
                 </Link>
                 <Link className='burgerLink' to='/school/US'>
-                  Silver
-                </Link>
-                <Link className='burgerLink' to='/school/UE'>
-                  Steinhardt
-                </Link>
-                <Link className='burgerLink' to='/school/UY'>
-                  Tandon
-                </Link>
-                <Link className='burgerLink' to='/school/UT'>
-                  Tisch
+                  Silver School of Social Work
                 </Link>
                 <Link className='burgerLink' to='/user'>
                   My Account

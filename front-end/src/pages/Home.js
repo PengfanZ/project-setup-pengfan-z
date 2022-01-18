@@ -7,42 +7,14 @@ function Home() {
       <Link id='CAS' className='college' to='/school/UA'>
         {" "}
         College of Arts and Sciences{" "}
-      </Link>
-      <Link id='DNT' className='college' to='/school/UD'>
-        {" "}
-        College of Dentistry{" "}
-      </Link>
-      {/* <Link id='CRT' className='college' to='/courant'>
-        {" "}
-        Courant Institute of Mathematics
-      </Link> */}
-      <Link id='GLT' className='college' to='/school/UG'>
-        {" "}
-        Gallatin School of Individualized Study
-      </Link>
+      </Link>{" "}
       <Link id='STN' className='college' to='/school/UB'>
         {" "}
         Leonard N. Stern School of Business
       </Link>
-      <Link id='WGR' className='college' to='/school/GP'>
+      <Link id='GLT' className='college' to='/school/UG'>
         {" "}
-        Robert F. Wagner Graduate School of Public Service
-      </Link>
-      <Link id='NUR' className='college' to='/school/UN'>
-        {" "}
-        Rory Meyers College of Nursing
-      </Link>
-      <Link id='GPH' className='college' to='/school/UU'>
-        {" "}
-        School of Global Public Health
-      </Link>
-      {/* <Link id='LAW' className='college' to='/law'>
-        {" "}
-        School of Law
-      </Link> */}
-      <Link id='SIL' className='college' to='/school/US'>
-        {" "}
-        Silver School of Social Work
+        Gallatin School of Individualized Study
       </Link>
       <Link id='STD' className='college' to='/school/UE'>
         {" "}
@@ -59,7 +31,34 @@ function Home() {
       <Link id='LIB' className='college' to='/school/UF'>
         {" "}
         Liberal Studies
+      </Link>{" "}
+      <Link id='CAS' className='college' to='/school/GA'>
+        Graduate School of Arts and Science
       </Link>
+      <Link id='TDN' className='college' to='/school/GY'>
+        {" "}
+        Tandon School of Engineering (Graduate)
+      </Link>{" "}
+      <Link id='NUR' className='college' to='/school/UN'>
+        {" "}
+        Rory Meyers College of Nursing
+      </Link>
+      <Link id='GPH' className='college' to='/school/UU'>
+        {" "}
+        School of Global Public Health
+      </Link>{" "}
+      <Link id='DNT' className='college' to='/school/UD'>
+        {" "}
+        College of Dentistry{" "}
+      </Link>{" "}
+      <Link id='SIL' className='college' to='/school/US'>
+        {" "}
+        Silver School of Social Work
+      </Link>{" "}
+      {/* <Link id='WGR' className='college' to='/school/GP'>
+        {" "}
+        Robert F. Wagner Graduate School of Public Service
+      </Link> */}
     </div>
   );
 }
