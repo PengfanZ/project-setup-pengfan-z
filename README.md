@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/software-students-fall2021/project-setup-pengfan-z/tree/master.svg?style=svg)](https://circleci.com/gh/software-students-fall2021/project-setup-pengfan-z/tree/master)
+<!-- [![CircleCI](https://circleci.com/gh/software-students-fall2021/project-setup-pengfan-z/tree/master.svg?style=svg)](https://circleci.com/gh/software-students-fall2021/project-setup-pengfan-z/tree/master) -->
 
 ## Smart Choice Overview:
 
