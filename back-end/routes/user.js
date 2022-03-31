@@ -116,7 +116,9 @@ userRouter.post(
 );
 
 // remove course from the cart
-userRouter.post('/removeCourse', passport.authenticate('jwt', {session: false}),
+userRouter.post(
+    '/removeCourse',
+    passport.authenticate('jwt', { session: false }),
     async (req, res) => {
         const { courseId } = req.body;
         const foundUser = await User.findOne({ username: req.user.username });
@@ -137,6 +139,6 @@ userRouter.post('/removeCourse', passport.authenticate('jwt', {session: false}),
         );
         res.json({ user: req.user });
     }
-)
+);
 
 module.exports = { userRouter };
