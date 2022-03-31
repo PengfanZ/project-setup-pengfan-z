@@ -115,4 +115,28 @@ userRouter.post(
     }
 );
 
+// remove course from the cart
+userRouter.post('/removeCourse', passport.authenticate('jwt', {session: false}),
+    async (req, res) => {
+        const { courseId } = req.body;
+        const foundUser = await User.findOne({ username: req.user.username });
+        // Avoid deleting nonexist courseId
+        if (!foundUser.courses.includes(courseId)) {
+            return res.status(404).json({ message: "Course doesn't exist in user's cart." });
+        }
+        User.findOneAndUpdate(
+            { username: req.user.username },
+            { $pull: { courses: courseId } },
+            (error, success) => {
+                if (error) {
+                    console.log(error);
+                    return res.status(403).json({ message: 'Unauthorized' });
+                }
+                console.log(success);
+            }
+        );
+        res.json({ user: req.user });
+    }
+)
+
 module.exports = { userRouter };
