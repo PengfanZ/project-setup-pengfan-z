@@ -100,7 +100,7 @@ const User = (props) => {
                     removeCourse(courseObj);
                     console.log(removed);
                     // not an optimal solution
-                    window.location.reload(false);
+                    // window.location.reload(false);
                   }}
                 >
                   remove
