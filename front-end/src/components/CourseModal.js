@@ -6,6 +6,7 @@ const axios = require("axios");
 const CourseModal = (props) => {
   const [data, setData] = useState({});
   const [moreDetail, setMoreDetail] = useState(false);
+  const [existed, setExisted] = useState(false);
 
   useEffect(() => {
     axios
@@ -13,9 +14,11 @@ const CourseModal = (props) => {
       .then((res) => {
         console.log(res.data);
         setData(res.data);
+        setExisted(true);
       })
       .catch((err) => {
-        console.error(err);
+        setExisted(false);
+        // console.error(err);
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.show]);
@@ -26,7 +29,7 @@ const CourseModal = (props) => {
         to={`/school/${data.subjectCode.school}/${data.subjectCode.code}/${data.deptCourseId}`}
       ></Redirect>
     );
-  } else {
+  } else if (existed) {
     return (
       <>
         <Modal show={props.show} onHide={props.handleClose} centered>
@@ -42,6 +45,20 @@ const CourseModal = (props) => {
               More detail
             </Button>
           </Modal.Footer>
+        </Modal>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Modal show={props.show} onHide={props.handleClose} centered>
+          <Modal.Header closeButton>
+            <Modal.Title>{props.courseId}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h6>Description:</h6>
+            <p>{props.courseId} is not provided this semester</p>
+          </Modal.Body>
         </Modal>
       </>
     );

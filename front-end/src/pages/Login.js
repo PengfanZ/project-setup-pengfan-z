@@ -60,8 +60,6 @@ function Login(props) {
   } else {
     return (
       <div>
-        {/* <h2>{password}</h2> */}
-        {/* <form> */}
         <Alert
           variant='danger'
           onClose={() => setShowAlert(false)}
