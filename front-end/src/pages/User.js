@@ -21,6 +21,7 @@ const User = (props) => {
   const [courseId, setCourseId] = useState("");
 
   useEffect(() => {
+    console.log("test");
     if (props.user === null) {
       history.push("/login");
     } else {
@@ -33,6 +34,7 @@ const User = (props) => {
         .then((res) => {
           setCourses(res.data[0].courses);
           setComments(res.data[0].comments);
+          console.log("test1", res.data[0].courses);
           setIsValidated(true);
         })
         .catch((err) => {
@@ -60,6 +62,8 @@ const User = (props) => {
       )
       .then((res) => {
         console.log(res);
+        setRemoved(!removed);
+        setIsValidated(false);
       })
       .catch((err) => {
         console.error(err.message);
@@ -96,7 +100,6 @@ const User = (props) => {
                   variant='link'
                   style={{ color: "red" }}
                   onClick={() => {
-                    setRemoved(!removed);
                     removeCourse(courseObj);
                     console.log(removed);
                     // not an optimal solution
