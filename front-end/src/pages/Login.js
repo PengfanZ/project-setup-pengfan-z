@@ -51,9 +51,10 @@ function Login(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
-  if (props.user !== null) {
-    return <Redirect to='/user' />;
-  } else if (isValid) {
+  // if (props.user !== null) {
+  //   return <Redirect to='/user' />;
+  // } else
+  if (isValid) {
     props.SetLoginState({ name: username, path: "/user" });
     return <Redirect to='/user' />;
   } else {
