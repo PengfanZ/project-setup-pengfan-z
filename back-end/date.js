@@ -1,4 +1,4 @@
 const year = 2022;
-const semester = 'su';
+const semester = 'fa';
 
 module.exports = { year, semester };
